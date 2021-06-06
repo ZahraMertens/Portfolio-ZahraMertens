@@ -92,6 +92,10 @@ header .header {
     font-size: 50px;
 }
 
+.about-me p {
+    padding: 10px;
+}
+
 .my-work {
     margin-top: 10px;
     padding: 15px;
@@ -125,11 +129,19 @@ header .header {
 }
 
 .footer {
-    width: 80%;
     margin: 15px;
     padding: 20px;
     display: flex;
     background-color: darkgray;
+    border-radius: 20px;
+}
+
+.footer h1 {
+    float: right;
+    border-right: black solid 2px;
+    margin: 3px;
+    padding: 5px;
+    font-size: 20px;
 }
 
 .footer .column1 {
@@ -167,6 +179,13 @@ header .header {
     display: inline;
 }
 
+.card-main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .my-work .card-main img {
     width: 90%;
     height: 90%;
@@ -175,15 +194,99 @@ header .header {
     margin: 10px;
     border: solid 10px rgb(118, 131, 255);
     border-radius: 20px;
-    filter: grayscale(60%);
+    filter: grayscale(70%);
 }
 
 .my-work .card-main img:hover {
     filter: grayscale(0%);
-    border: solid 15px rgb(25, 187, 125);
+    border: solid 15px rgb(180, 51, 255);
     width: 95%;
     height: 95%
 }
+
+.card-main img:hover +
+.text-main {
+    top: 50%;
+    left: 3%;
+}
+
+
+.text-main  {
+    position: absolute;
+    top: 50%;
+    left: 4.9%;
+    background-color: rgb(180, 51, 255);
+    font-size: 30px;
+    margin: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.card {
+    margin: 15px;
+    display: inline;
+    width: 40%;
+    position: relative;
+    align-content: flex-start;
+    margin-top: 20px;
+}
+
+.card-sub {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;    
+}
+
+.card-sub img {
+    display: inline-block;
+    width: 100%;
+    border: solid 10px rgb(106, 128, 161);
+    border-radius: 20px;
+    margin: 10px
+    
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 2.5%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#text1 {
+    background-color: rgb(180, 51, 255);
+    color: rgb(255, 255, 255);
+}
+
+#text2 {
+    background-color:salmon;
+    color: rgb(0, 0, 0);
+}
+
+#text3 {
+    background-color: springgreen;
+    color: darkblue;
+}
+
+#text4 {
+    background-color: rgb(250, 240, 96);
+    color: darkmagenta;
+}
+
+.card:hover {
+    background-color: rgb(118, 131, 255);
+    border-radius: 20px;
+    width: 45%;
+}
+
+
+
+
 
 
 
