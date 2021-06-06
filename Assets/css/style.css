@@ -1,0 +1,204 @@
+body {
+    flex-direction: column;
+    display: flex;
+    line-height: 1.5;
+    width: 100%;
+    
+}
+
+header .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: rgb(106, 128, 161) ;
+    color: antiquewhite;
+    width: 100%;
+}
+
+.header {
+    justify-content: flex-start;
+}
+
+.header h1 {
+    color: floralwhite;
+    margin: 5px;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.header ul {
+    justify-content: flex-end;
+}
+
+.header li {
+    display: inline;
+    font-size: 20px;
+}
+
+.header a {
+    color: floralwhite;
+    font-weight: bolder;
+    text-decoration-line: none;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+.hero {
+    display: flex;
+}
+
+.hero img {
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    width: 100%;
+}
+
+.content {
+    width: 80%;
+    justify-content: center;
+}
+
+.about-me {
+    margin-top: 10px;
+    padding: 15px;
+
+}
+
+.about-me .column1 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 100%;
+    border-right: rgba(105, 103, 228, 0.637) solid 5px;
+}
+
+.about-me .column2 {
+    float: right;
+    width: 80%;
+    padding: 10px;
+    height: 100%;
+}
+
+.about-me:after {
+    content: "";
+    display: table;
+    clear:both
+}
+
+.about-me h1 {
+    float: right;
+    font-size: 50px;
+}
+
+.my-work {
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+}
+
+.my-work h1 {
+    float: right;
+    font-size: 50px;
+}
+
+.my-work .column1 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 100%;
+    border-right: rgba(105, 103, 228, 0.637) solid 5px;
+}
+
+.my-work .column2 {
+    float: right;
+    width: 80%;
+    padding: 10px;
+    height: 100%;
+}
+
+.my-work:after {
+    content: "";
+    display: table;
+    clear:both
+}
+
+.footer {
+    width: 80%;
+    margin: 15px;
+    padding: 20px;
+    display: flex;
+    background-color: darkgray;
+}
+
+.footer .column1 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 50px;
+}
+
+.footer .column2 {
+    float: right;
+    width: 80%;
+    padding: 10px;
+    height: 100%;
+    display: inline;
+}
+
+.footer ul {
+    justify-content: center;
+}
+
+.footer li {
+    display: inline;
+    font-size: 19px;
+    justify-content: flex-end;
+}
+
+.footer a,
+.footer p {
+    color: rgb(5, 5, 4);
+    font-weight: bolder;
+    text-decoration-line: none;
+    padding: 10px;
+    margin: 10px;
+    display: inline;
+}
+
+.my-work .card-main img {
+    width: 90%;
+    height: 90%;
+    justify-content: center;
+    padding: 0px;
+    margin: 10px;
+    border: solid 10px rgb(118, 131, 255);
+    border-radius: 20px;
+    filter: grayscale(60%);
+}
+
+.my-work .card-main img:hover {
+    filter: grayscale(0%);
+    border: solid 15px rgb(25, 187, 125);
+    width: 95%;
+    height: 95%
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
