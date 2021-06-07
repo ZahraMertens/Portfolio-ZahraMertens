@@ -1,1 +1,1 @@
-![Video](.Assets/images/portfolio.mov)
+![Video](.Assets/images/portfolio.mov / GIF)
