@@ -2,38 +2,36 @@ body {
     flex-direction: column;
     display: flex;
     line-height: 1.5;
-    width: 100%;
-    
+    height: 100%;
+    justify-content: space-between;
 }
 
-header .header {
+main {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+    display: flex;
     padding: 1%;
     background-color: rgb(106, 128, 161) ;
-    color: antiquewhite;
-    width: 100%;
-}
-
-.header {
-    justify-content: flex-start;
 }
 
 .header h1 {
-    color: floralwhite;
-    margin: 5px;
-    padding: 5px;
-    font-size: 30px;
-}
-
-.header ul {
-    justify-content: flex-end;
+    color: rgb(250, 204, 247);
+    font-weight: bolder;
+    margin: 2px;
+    padding: 2px;
+    font-size: 60px;
+    padding-left: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration-line: underline;
 }
 
 .header li {
     display: inline;
     font-size: 20px;
+    padding: 15px;
 }
 
 .header a {
@@ -42,7 +40,16 @@ header .header {
     text-decoration-line: none;
     padding: 10px;
     margin: 10px;
+    border: solid black 1px;
+    border-radius: 25px;
     
+}
+
+.header a:hover {
+    border: solid 2px #edaafd;
+    border-radius: 10px;
+    color: black;
+    cursor: -moz-grabbing;
 }
 
 .hero {
@@ -58,27 +65,33 @@ header .header {
 .content {
     width: 80%;
     justify-content: center;
+    flex: 1;
 }
 
 .about-me {
     margin-top: 10px;
     padding: 15px;
-
+    display: flex;
+    -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
 }
 
 .about-me .column1 {
-    float: left;
     width: 20%;
     padding: 10px;
-    height: 100%;
     border-right: rgba(105, 103, 228, 0.637) solid 5px;
 }
 
 .about-me .column2 {
-    float: right;
     width: 80%;
     padding: 10px;
     height: 100%;
+}
+
+.column2 #name {
+    padding: 10px;
+    font-size: 20px;
 }
 
 .about-me:after {
@@ -90,6 +103,7 @@ header .header {
 .about-me h1 {
     float: right;
     font-size: 50px;
+    padding: 10px;
 }
 
 .about-me p {
@@ -100,6 +114,9 @@ header .header {
     margin-top: 10px;
     padding: 15px;
     display: flex;
+    -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
 }
 
 .my-work h1 {
@@ -111,7 +128,6 @@ header .header {
     float: left;
     width: 20%;
     padding: 10px;
-    height: 100%;
     border-right: rgba(105, 103, 228, 0.637) solid 5px;
 }
 
@@ -128,68 +144,14 @@ header .header {
     clear:both
 }
 
-.footer {
-    margin: 15px;
-    padding: 20px;
-    display: flex;
-    background-color: darkgray;
-    border-radius: 20px;
-}
-
-.footer h1 {
-    float: right;
-    border-right: black solid 2px;
-    margin: 3px;
-    padding: 5px;
-    font-size: 20px;
-}
-
-.footer .column1 {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    height: 50px;
-}
-
-.footer .column2 {
-    float: right;
-    width: 80%;
-    padding: 10px;
-    height: 100%;
-    display: inline;
-}
-
-.footer ul {
-    justify-content: center;
-}
-
-.footer li {
-    display: inline;
-    font-size: 19px;
-    justify-content: flex-end;
-}
-
-.footer a,
-.footer p {
-    color: rgb(5, 5, 4);
-    font-weight: bolder;
-    text-decoration-line: none;
-    padding: 10px;
-    margin: 10px;
-    display: inline;
-}
-
 .card-main {
     position: relative;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-.my-work .card-main img {
-    width: 90%;
-    height: 90%;
-    justify-content: center;
+.card-main img {
+    width: 60%;
+    height: 100%;
     padding: 0px;
     margin: 10px;
     border: solid 10px rgb(118, 131, 255);
@@ -197,11 +159,11 @@ header .header {
     filter: grayscale(70%);
 }
 
-.my-work .card-main img:hover {
+.card-main img:hover {
     filter: grayscale(0%);
     border: solid 15px rgb(180, 51, 255);
-    width: 95%;
-    height: 95%
+    width: 65%;
+    height: 100%
 }
 
 .card-main img:hover +
@@ -218,36 +180,41 @@ header .header {
     background-color: rgb(180, 51, 255);
     font-size: 30px;
     margin: 3px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     padding: 5px;
     border-radius: 15px;
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif
 }
 
-.card {
-    margin: 15px;
-    display: inline;
-    width: 40%;
-    position: relative;
-    align-content: flex-start;
-    margin-top: 20px;
-}
-
 .card-sub {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;    
+    justify-content: space-around;
 }
 
+.card {
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.card:hover {
+    background-color: rgb(228, 220, 110);
+    border-radius: 20px;
+    width: 420px;
+    height: 400px;
+    cursor: grab;
+}
+
+
+
 .card-sub img {
-    display: inline-block;
     width: 100%;
     border: solid 10px rgb(106, 128, 161);
     border-radius: 20px;
-    margin: 10px
-    
+    margin: 10px;
 }
 
 .text {
@@ -278,30 +245,87 @@ header .header {
     color: darkmagenta;
 }
 
-.card:hover {
-    background-color: rgb(118, 131, 255);
-    border-radius: 20px;
-    width: 45%;
+
+
+.footer {
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    background-color: rgba(105, 103, 228, 0.637);
 }
 
+.footer h1 {
+    float: right;
+    border-right: black solid 2px;
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.footer .column1 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 50px;
+}
+
+.footer .column2 {
+    float: right;
+    width: 80%;
+    padding: 10px;
+    height: 100%;
+    display: inline;
+}
+
+.footer ul {
+    justify-content: center;
+}
+
+.footer li {
+    display: inline;
+    font-size: 19px;
+    justify-content: flex-end;
+    padding: 15px;
+}
+
+.footer a,
+.footer p {
+    color: white;
+    font-weight: bolder;
+    text-decoration-line: none;
+    padding: 10px;
+    margin: 10px;
+    display: inline;
+    border: solid 1px pink;
+    border-radius: 15px;
+}
+
+.footer a:hover,
+.footer p:hover {
+    border: solid 3px black;
+    cursor: pointer;
+}
+
+.footer #in:after {
+    content: url(../images/linkedin-icon.png);
+}
+
+.footer #git:after {
+    content: url(../images/github_32_black.ico);
+} 
 
 
 
+@media screen (max-width:375) {
+    main {
+        display: block;
+    }
 
+    header {
 
+    }
+    
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.head {
+    float: side
+}
