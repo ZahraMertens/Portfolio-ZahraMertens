@@ -1,9 +1,9 @@
 ## General Information
 
 ```
-The webpage is a landing page which contains a navigation bar, a header image, and crads with text & images and a container. The webpages content is about marketing strategies and its benefits.
+The deployed Webpage is my Portfolio to introduce myself, demonstrate my work and present the opportunity to possible employers to contact.
 
-URL of the webpage: https://zahramertens.github.io/Horesion-Project/
+URL of my Portfolio: https://zahramertens.github.io/Portfolio/
 ```
 
 ## Table if Contents
@@ -11,41 +11,54 @@ URL of the webpage: https://zahramertens.github.io/Horesion-Project/
 2. [Task Description](#task-description)
 3. [Changes that have been made](#changes-that-have-been-made)
 4. [Mock-Up](#mock-up)
-5. [Credits](#credits)
+5. [Bonus](#bonus)
+6. [Credits](#credits)
 
 
 ## Task Describtion
 
+The task was to create a web application from scratch. The webpage is a portfolio which we can add to as the course progresses.
+
+The portfolio is ment to demonstarte our skills and talents of HTML and CSS to employers that might want to hire someone, with a focus on flexbox, media queries and CSS variables. The portfolio demonstrates the highlights of our work and the process behind it to maximize the chances to find a job. The portfolio is ment to align with certain criteria, mentioned below.
+
+**Note:** As I have only created one webpage so far, this is the only one that is linked and the other containers are filled with placeholder images.
+
+## Actual Behaviour
+
 ```
-The Marketing agency "Horesion" asked to refactor its existing website to make it more accessible without changing its functionality. The code needed to be improved to meet a certain set of standards, especially to make it more accessible.  
-To meet WCAG (Web Content Accessibility Guidelines) the code has been improved so people with disabilities can access the website using assistive technologies. 
+* You are presented with my name, a recent photo, and links to sections about me, my work, and how to contact me.
 
-The goal is to avoid litigation and to optimize for search engines.
+* When you click on the links in the navigation bar, the UI scrolls to the corresponding section.
+
+* The my-work section includes images of my applications (atm placeholder images) which are titled.
+
+* The first image of the application is larger than the other ones and they all have hover functions.
+
+* When you click on the first/larger image it will take you to the first projects deployed webpage.
+
+* The layout is responsive and adapts to different viewports, such as smartphones and Ipads.
 ```
 
-## Changes that have been made
-
+## 🏆 Bonus
 ```
-* The user can find semantic HTML elements 
 
-* The HTML elements follow a logical structure, independent of styling and * positioning
+* When you click on the Resume PDF element in the navigation bar, you will download my resume.
 
-* All images have accessible alt attributes
-
-* Heading attributes are in sequential order
-
-* The titel has a concise, descriptive title
+* When you click on the GitHub or LinkedIn element in the footer, it will lead you too my profile on both social media websites.
 ```
 
 ## Mock-Up
 
-The following image shows the web applications apperance and functionality:
+The following GIF shows the web applications apperance and functionality:
 
-
-![](./Assets/images/portfolio.gif)
+![portfolio-demo](./Assets/images/portfolio.gif)
 
 ## Credits
 
-https://www.w3schools.com/css/default.asp
-https://css-tricks.com/almanac/properties/b/box-shadow/
-https://www.w3.org/2005/10/howto-favicon
+https://www.w3schools.com/html/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties
+https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals
+https://css-tricks.com/snippets/css/style-links-depending-on-destination/
+https://htmlcheatsheet.com/css/
+https://www.w3schools.com/tags/att_a_download.asp
