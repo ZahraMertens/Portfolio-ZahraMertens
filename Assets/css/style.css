@@ -1,24 +1,33 @@
-body {
-    flex-direction: column;
-    display: flex;
-    line-height: 1.5;
-    height: 100%;
-    justify-content: space-between;
+
+/*Defining colours that are used multiple times*/
+:root {
+    --header-color: rgb(106, 128, 161);
+    --main-color: rgba(114, 112, 199, 0.637);
+    --text-color: rgb(255, 255, 255);
+    --color-pink: #edaafd;
+    --color-black: black;
 }
 
+/*Defining the line-height for the whole body*/
+body {
+    line-height: 1.5;
+}
+
+/*Setting the main part as a flex container*/
 main {
     display: flex;
     flex-wrap: wrap;
 }
 
+/*Styles and addresses the whole header*/
 header {
     display: flex;
     padding: 1%;
-    background-color: rgb(106, 128, 161) ;
+    background-color: var(--header-color);
 }
 
 .header h1 {
-    color: rgb(250, 204, 247);
+    color: var(--text-color);
     font-weight: bolder;
     margin: 2px;
     padding: 2px;
@@ -26,57 +35,54 @@ header {
     padding-left: 10%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-decoration-line: underline;
+    text-shadow: 2px 2px 5px rgb(215, 141, 255);
 }
 
+/*Styles and addresses the navigation bar*/
 nav {
-    display: flex;
     justify-content: flex-start;
-    background-color: rgb(106, 128, 161);
+    background-color: var(--header-color);
     padding-bottom: 10px;
 }
 
 nav li {
     display: inline;
-    font-size: 17px;
+    font-size: 24px;
 }
 
 nav a {
-    color: floralwhite;
+    color: var(--text-color);
     font-weight: bolder;
     text-decoration-line: none;
     padding: 7px;
     margin: 10px;
-    border: solid black 1px;
+    border: solid var(--color-black) 1px;
     border-radius: 25px;
 }
 
- nav a:hover {
-    border: solid 2px #edaafd;
+nav a:hover {
+    border: solid 2px var(--color-pink);
     border-radius: 10px;
-    color: black;
+    color: var(--color-black);
     cursor: -moz-grabbing;
+    background-color: var(--text-color);
 }
 
-.hero {
-    display: flex;
-}
-
+/*Sets the main image on the page and defines its resolution*/
 .hero img {
-    flex-wrap: wrap;
-    flex-flow: column wrap;
     width: 100%;
 }
 
-.content-am {
-    border: 1px;
-    padding: 10px;
-    margin: 5px;
-    display: flex;
-}
-
+/*Styles and defines the about-me container*/
 .about-me {
     margin-top: 10px;
     padding: 15px;
+}
+
+.about-me h1 {
+    float: right;
+    font-size: 50px;
+    padding: 10px;
 }
 
 .about-me .column1 {
@@ -95,31 +101,22 @@ nav a {
 
 .column2 #name {
     padding: 10px;
-    font-size: 20px;
-}
-
-
-.about-me h1 {
-    float: right;
-    font-size: 50px;
-    padding: 10px;
+    font-size: 30px;
 }
 
 .about-me p {
     padding: 10px;
 }
 
-.content-mw {
-    border: 1px;
-    padding: 10px;
-    margin: 5px;
-    display: flex;
-}
-
+/*Styles and defines the my-work container*/
 .my-work {
     margin-top: 10px;
     padding: 15px;
+}
 
+.my-work .column1 h1 {
+    float: right;
+    font-size: 50px;
 }
 
 .my-work .column1 {
@@ -129,12 +126,6 @@ nav a {
     border-right: rgba(105, 103, 228, 0.637) solid 5px;
 }
 
-.column1 h1 {
-    float: right;
-    font-size: 50px;
-}
-
-
 .my-work .column2 {
     width: 80%;
     float: right;
@@ -142,38 +133,24 @@ nav a {
     height: 100%;
 }
 
-
+/*Styles the bigger image and text on the container*/
 .card-main {
-    position: relative;
+    position: relative; /*Defining the cards position that the text can be moved on top*/
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 50%;
+    width: 100%;
 }
 
 .card-main img {
-    width: 100%;
-    height: 100%;
-    padding: 0px;
+    width: 50%;
+    height: 50%;
+    
     margin: 10px;
     border: solid 10px rgb(118, 131, 255);
     border-radius: 20px;
-    filter: grayscale(70%);
-
+    filter: grayscale(60%);
+    box-shadow: 8px 8px 8px grey;
 }
-
-.card-main img:hover {
-    filter: grayscale(0%);
-    border: solid 15px rgb(180, 51, 255);
-    width: 105%;
-    height: 100%;
-}
-
-.card-main img:hover +
-.text-main {
-    top: 40%;
-    left: 3%;
-}
-
 
 .text-main  {
     position: absolute;
@@ -184,10 +161,25 @@ nav a {
     margin: 3px;
     padding: 5px;
     border-radius: 15px;
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
     font-family: Arial, Helvetica, sans-serif
 }
 
+.card-main img:hover {
+    filter: grayscale(0%);
+    border: solid 15px rgb(180, 51, 255);
+    width: 55%;
+    height: 100%;
+}
+
+/*When hover over main card, the text moves with the image*/
+.card-main img:hover +
+.text-main {
+    top: 40%;
+    left: 3%;
+}
+
+/*Addresses all smaller pictures and text within the container*/
 .card-sub {
     display: flex;
     flex-wrap: wrap;
@@ -195,115 +187,109 @@ nav a {
     padding: 10px;
 }
 
+.card-sub img {
+    width: 100%;
+    border: solid 10px var(--main-color);
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px grey;
+}
+
 .card {
     width: 23%;
     position: relative;
     margin-top: 20px;
-    margin-left: 0px;
     margin-right: 10px;
-}
-
-.card:hover {
-    background-color: rgb(228, 220, 110);
-    border-radius: 20px;
-    width: 310px;
-    height: 310px;
-    cursor: grab;
-}
-
-.card-sub img {
-    width: 100%;
-    border: solid 10px rgb(106, 128, 161);
-    border-radius: 20px;
 }
 
 .text {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 2.5%;
     padding: 10px;
     border-radius: 15px;
 }
 
 #text1 {
-    background-color: rgb(180, 51, 255);
-    color: rgb(255, 255, 255);
+    background-color: rgb(0, 255, 221);
+    color: var(--color-black);
 }
 
 #text2 {
-    background-color:salmon;
-    color: rgb(0, 0, 0);
+    background-color:rgb(135, 155, 221);
+    color: var(--color-black);
 }
 
 #text3 {
-    background-color: springgreen;
-    color: darkblue;
+    background-color: rgb(255, 238, 0);
+    color: var(--color-black);
 }
 
 #text4 {
-    background-color: rgb(250, 240, 96);
-    color: darkmagenta;
+    background-color: rgb(135, 155, 221);
+    color: var(--color-black);
 }
 
+.card:hover {
+    background-color: rgb(255, 138, 109);
+    border-radius: 20px;
+    width: 310px;
+    height: 310px;
+    cursor: grab;
+}
 
+/*Addresses the footer section*/
+/*Sets the footer to a flex container*/
 .footer {
-    margin: 0px;
     padding: 20px;
     display: flex;
-    background-color: rgba(105, 103, 228, 0.637);
-}
-
-.footer h1 {
-    float: right;
-    border-right: black solid 3px;
-    font-size: 25px;
-    padding-right: 7px;
+    background-color: var(--main-color);
 }
 
 .footer .column1 {
     float: left;
     width: 300px;
     padding: 10px;
-    height: 50px;
 }
 
 .footer .column2 {
     float: right;
-    width: 700px;
-    padding: 10px;
-    height: 100%;
-    display: inline;
 }
 
-.footer ul {
-    justify-content: center;
+.footer h1 {
+    float: right;
+    border-right: var(--color-black) solid 3px;
+    font-size: 25px;
+    padding-right: 7px;
 }
 
 .footer li {
     display: inline-block;
     font-size: 19px;
     justify-content: flex-end;
-    padding: 7px;
+    padding: 15px;
 }
 
+/*Styling footer content*/
 .footer a,
 .footer p {
     color: white;
     font-weight: bolder;
-    text-decoration-line: none;
     padding: 5px;
     margin: 10px;
-    display: inline;
-    border: solid 1px pink;
+    border: solid 1px var(--color-black);
     border-radius: 15px;
+    box-shadow: 5px 5px 5px grey;
 }
 
+/*Adding a hover function to the footers content*/
 .footer a:hover,
 .footer p:hover {
-    border: solid 3px black;
+    border: solid 3px var(--color-black);
+    background-color: rgb(252, 155, 203);
     cursor: pointer;
 }
 
+/*Place icon by using a pseudo-element behind the text*/
 .footer #in:after {
     content: url(../images/linkedin-icon.png);
 }
@@ -312,13 +298,17 @@ nav a {
     content: url(../images/github_32_black.ico);
 } 
 
-/*Layout changes for Smartphones*/
-@media screen and (max-width:375px) {
+
+/*Responsive layout for larger devices such as an Ipad*/
+@media screen and (max-width:935px) {
+    
+    /*Changes the navigation bar content from inline elements to block elements*/
     nav li {
         display: block;
         font-size: 20px;
     }
 
+    /*Changing the styling of the navigation bar items*/
     nav a {
         color: floralwhite;
         font-weight: bolder;
@@ -326,170 +316,55 @@ nav a {
         padding: 7px;
         margin: 10px;
         border: none;
-    }
+    } 
     
-    .content-mw,
-    .content-am,
-    main {
-        display: block;
-        width: 100%;
+    /*Adding a pseudo element to the nav bar items*/
+    nav a::before {
+        content: "> ";
+        color: rgb(194, 166, 219) ;
     }
     
     .card-main {
         position: relative;
     }
 
-    .about-me .column1 {
+    /*Defining that the whole column1 for both articles takes the whole 
+    width of the page to break the column layout*/
+    .about-me .column1,
+    .my-work .column1 {
         width: 100%;
-    
     }
     
+    /*Changing the font size of the headline to a smaller one*/
     .my-work .column1 h1,
     .about-me .column1 h1 {
         font-size: 30px;
-        float: right;
     }
-     article {
-         display: block;
-     }
     
     .about-me .column2 {
         width: 100%;
         float: left;
         padding: 10px;
-        height: 100%;
-    }
-
-    .my-work .column1 {
-        float: inline-start;
-        width: 100%;
-        height: 100%;
     }
     
     .my-work .column2 {
         width: 100%;
         float: left;
         padding: 10px;
-        height: 100%;
     }
     
-    .card {
-        display: block;
-        width: 300px;
-        height: 200px;
-    }
-    
+    /*Defining new image size*/
     .card-main img {
         width: 300px;
         height: 200px;
     }
-
+    
+    /*Changing font size of the text-main to adjust it to the image*/
     .text-main  {
         font-size: 17px;
     }
 
-    footer {
-        display: block;
-        width: 100%;
-    }
-    
-    footer .column1 {
-        width: 100%;
-    }
 
-    footer .column1 h1 {
-        border-right: black solid 3px;
-        font-size: 20px;
-        float: right;
-    }
-
-    footer .column2 {
-        width: 100%;
-        padding: 10px;
-        height: 100%;
-    }
-    
-    .footer li {
-        font-size: 10px;
-        display: block;
-        width: 100%;
-        font-size: 20px;
-    }
-    
-    .footer a,
-    .footer p {
-        display: block;
-        color: white;
-        font-size: 15px;
-        font-weight: bolder;
-        text-decoration-line: none;
-        padding: 0px;
-        margin: 0px;
-        border: none;
-    }
-
-}
-
-@media screen and (max-width:935px) {
-    nav li {
-        display: block;
-        font-size: 20px;
-    }
-
-    nav a {
-        color: floralwhite;
-        font-weight: bolder;
-        text-decoration-line: none;
-        padding: 7px;
-        margin: 10px;
-        border: none;
-    }
-    
-    .content-mw,
-    .content-am,
-    main {
-        display: block;
-        width: 100%;
-    }
-    
-    .card-main {
-        position: relative;
-    }
-
-    .about-me .column1 {
-        width: 100%;
-    
-    }
-    
-    .my-work .column1 h1,
-    .about-me .column1 h1 {
-        font-size: 30px;
-        float: right;
-    }
-     article {
-         display: block;
-     }
-    
-    .about-me .column2 {
-        width: 100%;
-        float: left;
-        padding: 10px;
-        height: 100%;
-    }
-
-    .my-work .column1 {
-        float: inline-start;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .my-work .column2 {
-        width: 100%;
-        float: left;
-        padding: 10px;
-        height: 100%;
-    }
-    
     .card-sub {
         padding-bottom: 20px;
     }
@@ -500,54 +375,63 @@ nav a {
         margin-bottom:10px;
     }
 
-    
-    .card-main img {
-        width: 300px;
-        height: 200px;
-    }
-
-    .text-main  {
-        font-size: 17px;
-    }
-
-    footer {
-        display: block;
-        width: 100%;
-    }
-    
-    footer .column1 {
-        width: 100%;
-    }
-
-    footer .column1 h1 {
-        border-right: black solid 3px;
-        font-size: 20px;
-        float: right;
-    }
-
-    footer .column2 {
-        width: 100%;
-        padding: 10px;
-        height: 100%;
-    }
-    
+    /*Changing footer list elements from inline-block to block elements*/
     .footer li {
-        font-size: 10px;
         display: block;
-        width: 100%;
-        font-size: 20px;
     }
     
+    /*Changing the styling of the footer elements*/
     .footer a,
     .footer p {
         display: block;
         color: white;
         font-size: 15px;
         font-weight: bolder;
-        text-decoration-line: none;
         padding: 0px;
         margin: 0px;
         border: none;
+        box-shadow: none;
     }
-
 }
+
+
+/*Layout changes for Smartphones*/
+@media screen and (max-width:375px) {
+
+    /*Change the font size of the #name to a smaller one*/
+    .column2 #name {
+        font-size: 20px;
+    }
+    
+    /*Define most elements as block elements*/
+    .content-mywork,
+    .content-aboutme,
+    main {
+        display: block;
+        width: 100%;
+    }
+    
+    /*Define the size of all cards*/
+    .card-main img {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .card {
+        display: block;
+        width: 300px;
+        height: 200px; 
+    }
+    
+    /*Changing the text-main as the screen gets smaller*/
+    .text-main  {
+        font-size: 17px;
+    }
+    
+    /*Changing font size of footer h1*/
+    footer .column1 h1 {
+        font-size: 20px;
+    }
+}
+
+
