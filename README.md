@@ -3,7 +3,7 @@
 ```
 The deployed Webpage is my Portfolio to introduce myself, demonstrate my work and present the opportunity to possible employers to contact.
 
-URL of my Portfolio: https://zahramertens.github.io/Portfolio/
+URL of my Portfolio: https://zahramertens.github.io/Portfolio-ZahraMertens/
 ```
 
 ## Table if Contents
