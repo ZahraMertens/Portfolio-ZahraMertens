@@ -3,7 +3,8 @@
 ```
 The deployed Webpage is my Portfolio to introduce myself, demonstrate my work and present the opportunity to possible employers to contact.
 
-URL of my Portfolio: https://zahramertens.github.io/Portfolio-ZahraMertens/
+* [Deployed URL of the Weather Dashboard](https://zahramertens.github.io/Portfolio-ZahraMertens/)
+* [URL of the GitHub Repo](https://github.com/ZahraMertens/Portfolio-ZahraMertens.git)
 ```
 
 ## Table if Contents
