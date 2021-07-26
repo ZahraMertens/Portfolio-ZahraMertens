@@ -5,144 +5,181 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./Assets/css/reset.css" />
     <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+
   </head>
 
    <body>
       <!--Header shows the main headline-->
-      <header>
-         <div class="header">
-            <h1>Portfolio</h1>
-         </div>
-      </header>
-
-      <!--Navigation bar that is linked to webpages content-->
-      <nav>
-         <ul>
-           <li><a href="#abou-me">About Me</a></li>
-           <li><a href="#my-work">My Work</a></li>
-           <li><a href="#contact">Contact Me</a></li>
-           <li><a href="./Assets/images/Resume-2021.pdf" download="ZahraMertensResume">Resume PDF</a></li>
+   <header class="row header">
+      <h1 class="col-6 header">My Portfolio</h1>
+      <nav class="col-6">
+         <ul class="row ul-header">
+            <li class="col-3"><a class="nav-el"  href="#about-me">About Me</a></li>
+            <li class="col-3"><a class="nav-el" href="#my-work">My Work</a></li>
+            <li class="col-3"><a class="nav-el"  href="#contact">Contact Me</a></li>
+            <li class="col-3"><a class="nav-el" href="./Assets/images/Resume-2021.pdf" download="ZahraMertensResume">My Resume</a></li>
          </ul>
       </nav>
+   </header>
 
-   <main>
-      
-      <!--Hero Image-->
+   <main class="">
+
       <div class="hero">
-        <img src="./Assets/images/hero-img.jpg.jpg" alt="Hero image" />
+         <img class="img-hero" src="./Assets/images/hero.jpg" alt="Hero image" />
+      </div>
+   
+
+      <div class="about-me" id="about-me">
+         <div class="">
+            <h1 class="section-header">ABOUT ME</h1>
+         </div>
+         <div class="about-section">
+            <h2 id="name">Hi, I am Zahra. I am a Designer & Full Stack Developer!</h2>
+            <p>
+               I am passionate about interactive media, and in an age of digital I believe bringing design 
+               to life with code is essential. So, I studied how to design and build user interfaces at the 
+               University of Syndey. I recently graduated from "The Coding Bootcamp by Trilogy" and can not 
+               wait to get started.
+               I am a very passionate worker and deeply love what I do. I am always looking to improve 
+               existing code and create Applications from Scratch. As a full stack Front-end Developer
+               I am highly qualified in HTML, CSS, JavaScript and Python.
+            </p>
+            <p>
+               Design and development are both creative pursuits, and in digital, one couldn’t exist without 
+               the other. Having said that I find joy in development by bringing design to life, which is why 
+               I wouldn’t classify myself as ‘hardcore developer’ but instead one that can bridge two philosophies 
+               and ways of thinking.
+            </p>
+         </div>
       </div>
 
-      <!--Container Content-About me describes my person-->
-      <article class="content-aboutme">
-         <div class="about-me">
-            <div class="column1">
-              <h1 id="about-me">About Me</h1>
-            </div>
-               <div class="column2">
-                 <h2 id="name">Zahra Mertens</h2>
-                   <p>Hi! My name is Zahra and I design and build user interfaces. I recently graduated from 
-                      "The Coding Bootcamp by the University of Sydney & Trilogy" and can not wait to get started.
-                      I am a very passionate worker and deeply love what I do. I am always looking to improve 
-                      existing code and create Applications from Scratch. As a full stack Front-end Developer
-                      I am highly qualified in HTML, CSS, Java Script and Python. 
-                   </p>
-                   <p>What do I bring to your company? I do believe that as a developer, you must be able to communicate
-                      well to work in a team. Contrary to popular belief, Lorem Ipsum is not simply random text. Lorem ipsum dolor 
-                      sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                      Maecenas pharetra convallis posuere morbi leo urna molestie at. Aliquam faucibus purus in massa tempor. 
-                      Quam elementum pulvinar etiam non quam lacus suspendisse. Dictumst vestibulum rhoncus est pellentesque 
-                      elit. Posuere ac ut consequat semper. Viverra orci sagittis eu volutpat odio. Eget mauris pharetra et 
-                      ultrices neque ornare aenean euismod elementum. Elementum tempus egestas sed sed risus pretium quam. Massa 
-                      sed elementum tempus egestas sed. Eu non diam phasellus vestibulum lorem sed risus ultricies. Imperdiet nulla 
-                      malesuada pellentesque elit eget gravida cum sociis natoque. Tortor id aliquet lectus proin nibh nisl 
-                      condimentum id. Mollis nunc sed id semper. Feugiat vivamus at augue eget arcu.
-                   </p>
-               </div>
-         </div>
-      </article>
+      
 
-      <!--Container content-my work displays my deployed applications-->
-      <article class="content-mywork">
-         <div class="my-work">
-            <div class="column1">
-              <h1 id="my-work">My Work</h1>
+      <div class="main-image-container">
+         <h1 class="section-header my-work" id="my-work">MY WORK</h1>
+         <div class="main-container">
+           <h1 class="header-main">Cocktail Hub</h1>
+           <p class="p-main">CocktailHub is an inovative & interactive webpage designed to find hundreds of cocktails based on their spirit!
+            <a class="project-a" href="https://github.com/ZahraMertens/Password-Generator.git" target="_blank"><button class="repo-Project">GitHub Repository</button></a>
+           </p>
+           <a class="a-main" href="https://zahramertens.github.io/Project-1/" target="_blank"><img class="img-main" src="./Assets/images/project1.jpg"></a>
+         </div>
+      </div>
+
+      <div class="slide">
+         <h1 class="sub-header">OTHER PROJECT EXAMPLES</h1>
+
+         <div class="slideshow-container">
+           
+            <div class="Containers">
+               <a href="https://zahramertens.github.io/Weather-Dashboard/" target="_blank"><img class="img-slideshow" src="./Assets/images/weather.jpg"></a>
+               <div class="project">
+                  <h1 class="project-header">Weather Dashboard</h1>
+                  <P>With the Weather Dashboard Application the user can search for any location
+                     all over the planet and see its current weather conditions and a five day forecast
+                     for this location.
+                  </P>
+                  <a href="https://github.com/ZahraMertens/Weather-Dashboard.git" target="_blank"><button class="repo">GitHub Repository</button></a>
+               </div>
+            </div>
+
+            <div class="Containers">
+               <a href="https://zahramertens.github.io/Daily-Planner/" target="_blank"><img class="img-slideshow" src="./Assets/images/schedule.jpg"></a>
+               <div class="project">
+                  <h1 class="project-header">Daily Planner</h1>
+                  <P>The Daily Planner allows the user to organise its day better! You can simply enter your daily tasks and 
+                     save them to have a better overview of your tasks.
+                  </P>
+                  <a href="https://github.com/ZahraMertens/Daily-Planner.git" target="_blank"><button class="repo">GitHub Repository</button></a>
+               </div>
+            </div>
+
+            <div class="Containers">
+               <a href="https://zahramertens.github.io/Quiz-Code/" target="_blank"><img class="img-slideshow" src="./Assets/images/quiz.jpg"></a>
+               <div class="project">
+                  <h1 class="project-header">Quiz</h1>
+                  <P>Test your Coding Knowledge and challenge yourself with the code related Quiz. Save your Details
+                     and see the latest highscores of all users. Let the games begin!!!
+                  </P>
+                  <a href="https://github.com/ZahraMertens/Quiz-Code.git" target="_blank"><button class="repo">GitHub Repository</button></a>
+               </div>
+            </div>
+
+            <div class="Containers">
+               <a href="https://zahramertens.github.io/Password-Generator/" target="_blank"><img class="img-slideshow" src="./Assets/images/password-generator.jpg"></a>
+               <div class="project">
+                  <h1 class="project-header">Password Generator</h1>
+                  <P>Do you want to create a save password? No problem! With the Password Generator Application you
+                     can choose the compontents and get secure password.
+                  </P>
+                  <a href="https://github.com/ZahraMertens/Password-Generator.git" target="_blank"><button class="repo">GitHub Repository</button></a>
+               </div>
+            </div>
+
+            <div class="Containers">
+               <a href="https://zahramertens.github.io/Horesion-Project/" target="_blank"><img class="img-slideshow" src="./Assets/images/horisen.jpg"></a>
+               <div class="project">
+                  <h1 class="project-header">Horesion Marketing</h1>
+                  <P>A polished Website for Horesion, a upstream Marketing Agency.
+                  </P>
+                  <a href="https://github.com/ZahraMertens/Horesion-Project.git" target="_blank"><button class="repo">GitHub Repository</button></a>
+               </div>
             </div>
          
-            <div class="column2">
-               <div class="card-main">
-                  <a href="https://zahramertens.github.io/Horesion-Project/">
-                    <img src="./Assets/images/horesion-example.jpg.png" alt="Horesion Weppage Screenshot" />
-                  </a>
-                  
-                     <div class="text-main">
-                       <h2>Horesion webpage</h2>
-                        <p>HTML/CSS</p>
-                     </div>
-               </div>
-
-               <div class="card-sub">
-                  <div class="card" id="card1">
-                    <img src="./Assets/images/placeholder.jpg" alt="Horesion Weppage Screenshot" />
-                    
-                     <div class="text" id="text1">
-                       <h2>Placeholder</h2>
-                       <p>HTML/CSS</p>
-                     </div>
-                  </div>
-
-                  <div class="card" id="card2">
-                    <img src="./Assets/images/placeholder.jpg" alt="Horesion Weppage Screenshot" />
-                  
-                     <div class="text" id="text2">
-                       <h2>Placeholder</h2>
-                       <p>HTML/CSS</p>
-                     </div>
-                  </div>
-
-                  <div class="card" id="card3">
-                     <img src="./Assets/images/placeholder.jpg" alt="Horesion Weppage Screenshot" />
-                  
-                     <div class="text" id="text3">
-                       <h2>Placeholder</h2>
-                       <p>HTML/CSS</p>
-                     </div>
-                  </div>
-
-                  <div class="card" id="card4">
-                    <img src="./Assets/images/placeholder.jpg" alt="Horesion Weppage Screenshot" />
-                  
-                     <div class="text" id="text4">
-                        <h2>Placeholder</h2>
-                        <p>HTML/CSS</p>
-                     </div>
-                  </div>
-
-               </div>
-            </div>
+            <!-- Back and forward buttons --> 
+            <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="forward" onclick="plusSlides(1)">&#10095;</a>
          </div>
-      </article>
+         <br>
+         
+         <!-- The circles/dots -->
+         <div class="col-12" style="text-align:center" >
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+            <span class="dots" onclick="currentSlide(4)"></span>
+            <span class="dots" onclick="currentSlide(5)"></span>
+         </div>
+      </div>
   
+
+   <div class="contact">
+      <h1 class="contact-header" id="contact">REQUEST A PROJECT</h1>
+
+      <form class="form-email" method="POST" action="https://getform.io/f/1e2721d8-496f-4382-a64f-38f1bb78b9ef">
+         <label for="name">Your Name: (required)</label>
+         <input class="input" type="text" id="name" name="name"><br><br>
+         <label for="email">Your Email: (required)</label>
+         <input class="input" type="text" id="email" name="email"><br><br>
+         <label for="message">Your Message:</label>
+         <textarea id="message" name="message" rows="6" cols="60">
+         </textarea>
+         <button class="submit-button" type="submit" name="submit">SEND MAIL</button>
+      </form>
+
+
+   </div>
+
    </main>
 
-   <!--The footer includes most important contact information-->
-   <footer>
-      <div class="footer">
-         
-         <div class="column1">
-            <h1 id="contact">Contact Me</h1>
-         </div>
-         
-         <div class="column2">
-            <ul>
-               <li><p>Phone: 0410233114</p></li>
-               <li><p>Email: zahra.mertens@gmx.net</p></li>
-               <li><a id="git" href="https://github.com/ZahraMertens">GitHub </a></li>
-               <li><a id="in" href="https://www.linkedin.com/feed/">LinkedIn </a></li>
-            </ul>
-         </div>
-         
-      </div>
-   </footer>
+   <footer class="footer">
 
+      <div class="footer-header">
+         <h1 id="contact">CONTACT</h1>
+      </div>
+            
+      <div class="footer-content">
+         <a class="footer-links" href="https://www.linkedin.com/feed/" target="_blank">LinkedIn<img class="icon" src="./Assets/images/linkedin.png" width="60" height="50"></a>
+         <a class="footer-links" href="https://www.facebook.com/zahra.mertens/" target="_blank">Facebook<img class="icon" src="./Assets/images/facebook.png" width="50" height="50"></a>
+         <a class="footer-links" href="https://github.com/ZahraMertens" target="_blank">GitHub<img class="icon" src="./Assets/images/git.png" width="50" height="50"></a>
+      </div>
+                
+   </footer>
+      
+      
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="Assets/js/script.js"></script>
    </body>
 </html>

@@ -1,437 +1,343 @@
-
-/*Defining colours that are used multiple times*/
-:root {
-    --header-color: rgb(106, 128, 161);
-    --main-color: rgba(114, 112, 199, 0.637);
-    --text-color: rgb(255, 255, 255);
-    --color-pink: #edaafd;
-    --color-black: black;
-}
-
-/*Defining the line-height for the whole body*/
 body {
-    line-height: 1.5;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-/*Setting the main part as a flex container*/
 main {
     display: flex;
     flex-wrap: wrap;
 }
 
-/*Styles and addresses the whole header*/
 header {
-    display: flex;
-    padding: 1%;
-    background-color: var(--header-color);
-}
-
-.header h1 {
-    color: var(--text-color);
-    font-weight: bolder;
-    margin: 2px;
-    padding: 2px;
-    font-size: 60px;
-    padding-left: 10%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration-line: underline;
-    text-shadow: 2px 2px 5px rgb(215, 141, 255);
-}
-
-/*Styles and addresses the navigation bar*/
-nav {
-    justify-content: flex-start;
-    background-color: var(--header-color);
-    padding-bottom: 10px;
-}
-
-nav li {
-    display: inline;
-    font-size: 24px;
-}
-
-nav a {
-    color: var(--text-color);
-    font-weight: bolder;
-    text-decoration-line: none;
-    padding: 7px;
-    margin: 10px;
-    border: solid var(--color-black) 1px;
-    border-radius: 25px;
-}
-
-nav a:hover {
-    border: solid 2px var(--color-pink);
-    border-radius: 10px;
-    color: var(--color-black);
-    cursor: -moz-grabbing;
-    background-color: var(--text-color);
-}
-
-/*Sets the main image on the page and defines its resolution*/
-.hero img {
-    width: 100%;
-}
-
-/*Styles and defines the about-me container*/
-.about-me {
-    margin-top: 10px;
-    padding: 15px;
-}
-
-.about-me h1 {
-    float: right;
-    font-size: 50px;
-    padding: 10px;
-}
-
-.about-me .column1 {
-    width: 20%;
-    float: left;
-    padding: 10px;
-    border-right: rgba(105, 103, 228, 0.637) solid 5px;
-}
-
-.about-me .column2 {
-    width: 80%;
-    float: right;
-    padding: 10px;
-    height: 100%;
-}
-
-.column2 #name {
-    padding: 10px;
-    font-size: 30px;
-}
-
-.about-me p {
-    padding: 10px;
-}
-
-/*Styles and defines the my-work container*/
-.my-work {
-    margin-top: 10px;
-    padding: 15px;
-}
-
-.my-work .column1 h1 {
-    float: right;
-    font-size: 50px;
-}
-
-.my-work .column1 {
-    width: 20%;
-    float: left;
-    padding: 10px;
-    border-right: rgba(105, 103, 228, 0.637) solid 5px;
-}
-
-.my-work .column2 {
-    width: 80%;
-    float: right;
-    padding: 10px;
-    height: 100%;
-}
-
-/*Styles the bigger image and text on the container*/
-.card-main {
-    position: relative; /*Defining the cards position that the text can be moved on top*/
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 100%;
-}
-
-.card-main img {
-    width: 50%;
-    height: 50%;
-    
-    margin: 10px;
-    border: solid 10px rgb(118, 131, 255);
-    border-radius: 20px;
-    filter: grayscale(60%);
-    box-shadow: 8px 8px 8px grey;
-}
-
-.text-main  {
-    position: absolute;
-    top: 40%;
-    left: 1%;
-    background-color: rgb(180, 51, 255);
-    font-size: 30px;
-    margin: 3px;
-    padding: 5px;
-    border-radius: 15px;
-    color: var(--text-color);
-    font-family: Arial, Helvetica, sans-serif
-}
-
-.card-main img:hover {
-    filter: grayscale(0%);
-    border: solid 15px rgb(180, 51, 255);
-    width: 55%;
-    height: 100%;
-}
-
-/*When hover over main card, the text moves with the image*/
-.card-main img:hover +
-.text-main {
-    top: 40%;
-    left: 3%;
-}
-
-/*Addresses all smaller pictures and text within the container*/
-.card-sub {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding: 10px;
-}
-
-.card-sub img {
-    width: 100%;
-    border: solid 10px var(--main-color);
-    border-radius: 20px;
-    box-shadow: 8px 8px 8px grey;
-}
-
-.card {
-    width: 23%;
-    position: relative;
-    margin-top: 20px;
-    margin-right: 10px;
-}
-
-.text {
-    position: absolute;
-    top: 40%;
-    left: 2.5%;
-    padding: 10px;
-    border-radius: 15px;
-}
-
-#text1 {
-    background-color: rgb(0, 255, 221);
-    color: var(--color-black);
-}
-
-#text2 {
-    background-color:rgb(135, 155, 221);
-    color: var(--color-black);
-}
-
-#text3 {
-    background-color: rgb(255, 238, 0);
-    color: var(--color-black);
-}
-
-#text4 {
-    background-color: rgb(135, 155, 221);
-    color: var(--color-black);
-}
-
-.card:hover {
-    background-color: rgb(255, 138, 109);
-    border-radius: 20px;
-    width: 310px;
-    height: 310px;
-    cursor: grab;
-}
-
-/*Addresses the footer section*/
-/*Sets the footer to a flex container*/
-.footer {
-    padding: 20px;
-    display: flex;
-    background-color: var(--main-color);
-}
-
-.footer .column1 {
-    float: left;
-    width: 300px;
-    padding: 10px;
-}
-
-.footer .column2 {
-    float: right;
-}
-
-.footer h1 {
-    float: right;
-    border-right: var(--color-black) solid 3px;
-    font-size: 25px;
-    padding-right: 7px;
-}
-
-.footer li {
-    display: inline-block;
-    font-size: 19px;
-    justify-content: flex-end;
-    padding: 15px;
-}
-
-/*Styling footer content*/
-.footer a,
-.footer p {
+    background-color: black;
     color: white;
-    font-weight: bolder;
-    padding: 5px;
-    margin: 10px;
-    border: solid 1px var(--color-black);
-    border-radius: 15px;
-    box-shadow: 5px 5px 5px grey;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
-/*Adding a hover function to the footers content*/
-.footer a:hover,
-.footer p:hover {
-    border: solid 3px var(--color-black);
-    background-color: rgb(252, 155, 203);
+.header {
+    padding-left: 150px;
+    margin-right: 0px!important;
+}
+
+.ul-header {
+    margin-bottom: 0px!important;
+}
+
+.nav-el {
+    color: white;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav-el:hover {
+    font-weight: bolder;
+    font-size: 18px;
+    color: rgb(209, 209, 209);
+}
+
+.hero {
+    padding-right: 0px!important;
+}
+
+.img-hero {
+    width: 100%;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 0.2);
+    margin-bottom: 30px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.about-section {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 50%;
+}
+
+#name {
+    color: grey;
+    font-size: 25px;
+}
+
+.my-work {
+    padding-top: 30px;
+    margin-top: 80px;
+}
+
+.img-main,
+.img-slideshow {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+.img-slideshow {
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    transition: 0.3s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.img-slideshow:hover {
+    border: 5px solid rgb(0, 0, 0);
     cursor: pointer;
 }
 
-/*Place icon by using a pseudo-element behind the text*/
-.footer #in:after {
-    content: url(../images/linkedin-icon.png);
+.img-main {
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    transition: 0.3s;
 }
 
-.footer #git:after {
-    content: url(../images/github_32_black.ico);
-} 
-
-
-/*Responsive layout for larger devices such as an Ipad*/
-@media screen and (max-width:935px) {
-    
-    /*Changes the navigation bar content from inline elements to block elements*/
-    nav li {
-        display: block;
-        font-size: 20px;
-    }
-
-    /*Changing the styling of the navigation bar items*/
-    nav a {
-        color: floralwhite;
-        font-weight: bolder;
-        text-decoration-line: none;
-        padding: 7px;
-        margin: 10px;
-        border: none;
-    } 
-    
-    /*Adding a pseudo element to the nav bar items*/
-    nav a::before {
-        content: "> ";
-        color: rgb(194, 166, 219) ;
-    }
-    
-    .card-main {
-        position: relative;
-    }
-
-    /*Defining that the whole column1 for both articles takes the whole 
-    width of the page to break the column layout*/
-    .about-me .column1,
-    .my-work .column1 {
-        width: 100%;
-    }
-    
-    /*Changing the font size of the headline to a smaller one*/
-    .my-work .column1 h1,
-    .about-me .column1 h1 {
-        font-size: 30px;
-    }
-    
-    .about-me .column2 {
-        width: 100%;
-        float: left;
-        padding: 10px;
-    }
-    
-    .my-work .column2 {
-        width: 100%;
-        float: left;
-        padding: 10px;
-    }
-    
-    /*Defining new image size*/
-    .card-main img {
-        width: 300px;
-        height: 200px;
-    }
-    
-    /*Changing font size of the text-main to adjust it to the image*/
-    .text-main  {
-        font-size: 17px;
-    }
-
-
-    .card-sub {
-        padding-bottom: 20px;
-    }
-
-    .card {
-        display: block;
-        width: 300px;
-        margin-bottom:10px;
-    }
-
-    /*Changing footer list elements from inline-block to block elements*/
-    .footer li {
-        display: block;
-    }
-    
-    /*Changing the styling of the footer elements*/
-    .footer a,
-    .footer p {
-        display: block;
-        color: white;
-        font-size: 15px;
-        font-weight: bolder;
-        padding: 0px;
-        margin: 0px;
-        border: none;
-        box-shadow: none;
-    }
+.img-main:hover {
+    border: 5px solid green;
 }
 
-
-/*Layout changes for Smartphones*/
-@media screen and (max-width:375px) {
-
-    /*Change the font size of the #name to a smaller one*/
-    .column2 #name {
-        font-size: 20px;
-    }
-    
-    /*Define most elements as block elements*/
-    .content-mywork,
-    .content-aboutme,
-    main {
-        display: block;
-        width: 100%;
-    }
-    
-    /*Define the size of all cards*/
-    .card-main img {
-        width: 300px;
-        height: 200px;
-    }
-    
-    .card {
-        display: block;
-        width: 300px;
-        height: 200px; 
-    }
-    
-    /*Changing the text-main as the screen gets smaller*/
-    .text-main  {
-        font-size: 17px;
-    }
-    
-    /*Changing font size of footer h1*/
-    footer .column1 h1 {
-        font-size: 20px;
-    }
+.header-main {
+    text-align: center;
+    font-size: 30px;
+    color: grey;
 }
 
+.p-main {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
 
+.main-image-container {
+    margin-bottom: 50px;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.project-a {
+    display: block;
+}
+
+.repo-Project {
+    font-size: 16px;
+    padding: 10px 14px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(11, 129, 0);
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.repo-Project:hover {
+    background-color: #ff387a;
+}
+
+.sub-header {
+    text-align: center;
+    font-size: 20px;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.slide {
+    width:40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/*Slideshow*/
+.slideshow-container {
+    position: relative;
+}
+  
+/* Make the images invisible by default */
+.Containers {
+    display: none;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+/* forward & Back buttons */
+.Back, 
+.forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: grey;
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+}
+  
+/* Place the "forward button" to the right */
+.forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+  
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover, .forward:hover {
+    background-color: rgba(117, 117, 117, 0.8);
+}
+
+.repo {
+    font-size: 16px;
+    padding: 10px 14px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(11, 129, 0);
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.project-header {
+    color: gray;
+}
+
+.project {
+    text-align: center;
+}
+
+.repo:hover {
+    background-color: #ff387a;
+}
+
+.img-slideshow:hover + .Info {
+    border-left: 3px solid rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+}
+
+/* The circles or bullets and indicators */
+.dots {
+    cursor: pointer;
+    height: 16px;
+    width: 16px;
+    margin: 0 3px;
+    background-color: rgb(119, 119, 119);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.5s ease;
+}
+  
+.enable, 
+.dots:hover {
+    background-color: #ff387a;
+}
+  
+
+.contact {
+    margin-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(230, 230, 230);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.32) 0px 2px 16px 0px;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+
+.form-email{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block!important;
+}
+
+.input {
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
+    border-radius: 3px;
+    border: 1px solid grey;
+    width: 500px;
+    height: 35px;
+    padding-left: 5px;
+    
+}
+
+.input:focus,
+#message:focus {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+#message {
+    border-radius: 3px;
+    width: 500px;
+}
+
+.submit-button {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block!important;
+    background-color: rgb(0, 177, 0);
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 10px;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.submit-button:hover {
+    background-color: #ff387a;
+}
+
+footer {
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.footer-header {
+    display: block;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.footer-links {
+    color: white;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.footer-links:hover {
+    font-weight: bolder;
+    font-size: 18px;
+    color: white;
+}
+
+.footer-content {
+    display: block;
+}
+
+.footer-content a {
+  padding-right: 10px;
+}
+
+.icon {
+    margin-left: 20px;
+}
