@@ -5,20 +5,20 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="./Assets/css/reset.css" />
     <link rel="stylesheet" href="./Assets/css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 
   </head>
 
    <body>
       <!--Header shows the main headline-->
-   <header class="row header">
-      <h1 class="col-6 header">My Portfolio</h1>
-      <nav class="col-6">
-         <ul class="row ul-header">
-            <li class="col-3"><a class="nav-el"  href="#about-me">About Me</a></li>
-            <li class="col-3"><a class="nav-el" href="#my-work">My Work</a></li>
-            <li class="col-3"><a class="nav-el"  href="#contact">Contact Me</a></li>
-            <li class="col-3"><a class="nav-el" href="./Assets/images/Resume-2021.pdf" download="ZahraMertensResume">My Resume</a></li>
+   <header class="header">
+      <h1 class="header-h1">My Portfolio</h1>
+      <nav class="nav">
+         <ul class="ul-header">
+            <li class="li-nav"><a class="nav-el"  href="#about-me">About Me</a></li>
+            <li class="li-nav"><a class="nav-el" href="#my-work">My Work</a></li>
+            <li class="li-nav"><a class="nav-el"  href="#contact">Contact Me</a></li>
+            <li class="li-nav"><a class="nav-el" href="./Assets/images/Zahra-ResumeCoding.pdf" download="ZahraMertensResume">My Resume</a></li>
          </ul>
       </nav>
    </header>
@@ -45,6 +45,7 @@
                existing code and create Applications from Scratch. As a full stack Front-end Developer
                I am highly qualified in HTML, CSS, JavaScript and Python.
             </p>
+            <br>
             <p>
                Design and development are both creative pursuits, and in digital, one couldn’t exist without 
                the other. Having said that I find joy in development by bringing design to life, which is why 
@@ -68,7 +69,7 @@
       </div>
 
       <div class="slide">
-         <h1 class="sub-header">OTHER PROJECT EXAMPLES</h1>
+         <h1 class="sub-header">Other Project Examples</h1>
 
          <div class="slideshow-container">
            
@@ -80,7 +81,7 @@
                      all over the planet and see its current weather conditions and a five day forecast
                      for this location.
                   </P>
-                  <a href="https://github.com/ZahraMertens/Weather-Dashboard.git" target="_blank"><button class="repo">GitHub Repository</button></a>
+                  <a class="a-slideshow" href="https://github.com/ZahraMertens/Weather-Dashboard.git" target="_blank"><button class="repo-btn">GitHub Repository</button></a>
                </div>
             </div>
 
@@ -91,7 +92,7 @@
                   <P>The Daily Planner allows the user to organise its day better! You can simply enter your daily tasks and 
                      save them to have a better overview of your tasks.
                   </P>
-                  <a href="https://github.com/ZahraMertens/Daily-Planner.git" target="_blank"><button class="repo">GitHub Repository</button></a>
+                  <a class="a-slideshow" href="https://github.com/ZahraMertens/Daily-Planner.git" target="_blank"><button class="repo-btn">GitHub Repository</button></a>
                </div>
             </div>
 
@@ -102,7 +103,7 @@
                   <P>Test your Coding Knowledge and challenge yourself with the code related Quiz. Save your Details
                      and see the latest highscores of all users. Let the games begin!!!
                   </P>
-                  <a href="https://github.com/ZahraMertens/Quiz-Code.git" target="_blank"><button class="repo">GitHub Repository</button></a>
+                  <a class="a-slideshow" href="https://github.com/ZahraMertens/Quiz-Code.git" target="_blank"><button class="repo-btn">GitHub Repository</button></a>
                </div>
             </div>
 
@@ -113,7 +114,7 @@
                   <P>Do you want to create a save password? No problem! With the Password Generator Application you
                      can choose the compontents and get secure password.
                   </P>
-                  <a href="https://github.com/ZahraMertens/Password-Generator.git" target="_blank"><button class="repo">GitHub Repository</button></a>
+                  <a class="a-slideshow" href="https://github.com/ZahraMertens/Password-Generator.git" target="_blank"><button class="repo-btn">GitHub Repository</button></a>
                </div>
             </div>
 
@@ -123,7 +124,7 @@
                   <h1 class="project-header">Horesion Marketing</h1>
                   <P>A polished Website for Horesion, a upstream Marketing Agency.
                   </P>
-                  <a href="https://github.com/ZahraMertens/Horesion-Project.git" target="_blank"><button class="repo">GitHub Repository</button></a>
+                  <a class="a-slideshow" href="https://github.com/ZahraMertens/Horesion-Project.git" target="_blank"><button class="repo-btn">GitHub Repository</button></a>
                </div>
             </div>
          
@@ -134,7 +135,7 @@
          <br>
          
          <!-- The circles/dots -->
-         <div class="col-12" style="text-align:center" >
+         <div class="" style="text-align:center" >
             <span class="dots" onclick="currentSlide(1)"></span>
             <span class="dots" onclick="currentSlide(2)"></span>
             <span class="dots" onclick="currentSlide(3)"></span>
@@ -145,17 +146,17 @@
   
 
    <div class="contact">
-      <h1 class="contact-header" id="contact">REQUEST A PROJECT</h1>
+      <h1 class="section-header" id="contact">REQUEST A PROJECT</h1>
 
       <form class="form-email" method="POST" action="https://getform.io/f/1e2721d8-496f-4382-a64f-38f1bb78b9ef">
          <label for="name">Your Name: (required)</label>
-         <input class="input" type="text" id="name" name="name"><br><br>
+         <input class="input" type="text" id="nameInput" name="name" placeholder=" Full name"><br><br>
          <label for="email">Your Email: (required)</label>
-         <input class="input" type="text" id="email" name="email"><br><br>
+         <input class="input" type="text" id="email" name="email"  placeholder=" Email"><br><br>
          <label for="message">Your Message:</label>
          <textarea id="message" name="message" rows="6" cols="60">
          </textarea>
-         <button class="submit-button" type="submit" name="submit">SEND MAIL</button>
+         <button class="submit-btn" type="submit" name="submit">SEND MAIL</button>
       </form>
 
 
@@ -163,10 +164,10 @@
 
    </main>
 
-   <footer class="footer">
+   <footer>
 
-      <div class="footer-header">
-         <h1 id="contact">CONTACT</h1>
+      <div class="footer">
+         <h1 id="footer-header">CONTACT</h1>
       </div>
             
       <div class="footer-content">

@@ -1,6 +1,7 @@
 body {
     box-sizing: border-box;
-    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
 }
 
 main {
@@ -13,21 +14,33 @@ header {
     color: white;
     padding-top: 15px;
     padding-bottom: 15px;
+    width: 100%;
+    padding-left: 30px;
+    display: flex;
 }
 
-.header {
-    padding-left: 150px;
-    margin-right: 0px!important;
+.header-h1 {
+    width: 25%;
+    font-size: 40px;
+    font-weight: bold;
 }
 
-.ul-header {
-    margin-bottom: 0px!important;
+.nav {
+    text-align: center;
+    width: 75%;
+}
+
+.li-nav {
+    display: inline;
+    padding-left: 50px;
+    
 }
 
 .nav-el {
     color: white;
     font-size: 17px;
     transition: 0.3s;
+    text-decoration: none;
 }
 
 .nav-el:hover {
@@ -38,7 +51,9 @@ header {
 
 .hero {
     padding-right: 0px!important;
+    width: 100%
 }
+
 
 .img-hero {
     width: 100%;
@@ -49,6 +64,14 @@ header {
 .section-header {
     text-align: center;
     margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+.about-me {
+    padding-bottom: 50px;
+    width: 100%
 }
 
 .about-section {
@@ -61,11 +84,12 @@ header {
 #name {
     color: grey;
     font-size: 25px;
+    padding-bottom: 20px;
 }
 
 .my-work {
     padding-top: 30px;
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .img-main,
@@ -115,6 +139,8 @@ header {
 }
 
 .main-image-container {
+    width: 100%;
+    display: block;
     margin-bottom: 50px;
     background-color: rgb(245, 245, 245);
     padding-bottom: 50px;
@@ -123,6 +149,7 @@ header {
 
 .project-a {
     display: block;
+    padding-bottom: 20px;
 }
 
 .repo-Project {
@@ -143,13 +170,14 @@ header {
 
 .sub-header {
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     color: grey;
     margin-bottom: 20px;
 }
 
 .slide {
-    width:40%;
+    width: 100%;
+    display: block;
     margin-right: auto;
     margin-left: auto;
 }
@@ -157,6 +185,10 @@ header {
 /*Slideshow*/
 .slideshow-container {
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px!important; 
+    width: 40%;
 }
   
 /* Make the images invisible by default */
@@ -195,9 +227,10 @@ header {
     background-color: rgba(117, 117, 117, 0.8);
 }
 
-.repo {
+.repo-btn {
     font-size: 16px;
-    padding: 10px 14px;
+    margin-top: 10px;
+    padding: 10px;
     text-align: center;
     border-radius: 5px;
     color: white;
@@ -207,7 +240,10 @@ header {
 }
 
 .project-header {
-    color: gray;
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
 }
 
 .project {
@@ -240,19 +276,16 @@ header {
     background-color: #ff387a;
 }
   
-
 .contact {
+    width: 100%;
+    display: block;
+    padding: 0px!important;
     margin-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 50px!important;
     background-color: rgb(230, 230, 230);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.32) 0px 2px 16px 0px;
 }
 
-.contact-header {
-    text-align: center;
-    margin-bottom: 30px;
-    padding-top: 30px;
-}
 
 .form-email{
     width: 500px;
@@ -264,14 +297,17 @@ label {
     display: block!important;
 }
 
+input {
+    padding: 0px!important; 
+}
+
 .input {
     box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
     border-radius: 3px;
     border: 1px solid grey;
     width: 500px;
     height: 35px;
-    padding-left: 5px;
-    
+   
 }
 
 .input:focus,
@@ -284,22 +320,22 @@ label {
     width: 500px;
 }
 
-.submit-button {
-    text-align: center;
+.submit-btn {
     margin-left: auto;
     margin-right: auto;
-    display: block!important;
-    background-color: rgb(0, 177, 0);
-    color: white;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 5px;
-    font-size: 15px;
+    display: block;
     padding: 10px;
-    transition: 0.3s;
     margin-top: 15px;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(11, 129, 0);
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.3s;
 }
 
-.submit-button:hover {
+.submit-btn:hover {
     background-color: #ff387a;
 }
 
@@ -312,16 +348,21 @@ footer {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-.footer-header {
+#footer-header {
     display: block;
     text-align: center;
     padding-bottom: 30px;
+    font-size: 30px;
+    color: white;
+    font-weight: bolder;
 }
 
 .footer-links {
     color: white;
     font-size: 17px;
     transition: 0.3s;
+    text-decoration: none;
+    padding-right: 40px;
 }
 
 .footer-links:hover {
@@ -340,4 +381,85 @@ footer {
 
 .icon {
     margin-left: 20px;
+}
+
+@media screen and (max-width: 1245px){
+    .slideshow-container {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 670px){
+    .slideshow-container {
+        width: 100%;
+    }
+
+    .about-section {
+        width: 90%;
+    }
+
+    .p-main {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .li-nav {
+        display: block;
+        width: 100%;
+    }
+
+    header {
+        display: block;
+    }
+
+    .nav {
+        display: block;
+        text-align: left;
+    }
+
+    .li-nav {
+        padding-left: 0px;
+    }
+}
+
+@media screen and (max-width: 535px){
+    .img-main {
+        width: 250px;
+        height: 250px;
+    }
+
+    .img-slideshow {
+        width: 100%;
+        height: 100%;
+    }
+
+    .input,
+    #message {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .Containers {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-email{
+        width: 90%;
+    }
+
+    .a-slideshow {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .icon {
+        width: 20px;
+        height: 18px;
+        margin-left: 5px;
+    }
+
 }
