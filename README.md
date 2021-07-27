@@ -1,9 +1,9 @@
 ## General Information
 
 
-The deployed Webpage is my Portfolio to introduce myself, demonstrate my work and present the opportunity to possible employers to contact.
+The deployed Webpage is my Portfolio to showcase my work, introduce myself and give the user the posibility to contact through multiple channels such as LinkedIn, GitHub, Facebook or Email.
 
-* [Deployed URL of the Weather Dashboard](https://zahramertens.github.io/Portfolio-ZahraMertens/)
+* [Deployed URL of my Portfolio](https://zahramertens.github.io/Portfolio-ZahraMertens/)
 * [URL of the GitHub Repo](https://github.com/ZahraMertens/Portfolio-ZahraMertens.git)
 
 ## Table if Contents
@@ -11,54 +11,48 @@ The deployed Webpage is my Portfolio to introduce myself, demonstrate my work an
 2. [Task Description](#task-description)
 3. [Changes that have been made](#changes-that-have-been-made)
 4. [Mock-Up](#mock-up)
-5. [Bonus](#bonus)
-6. [Credits](#credits)
+5. [Credits](#credits)
 
 
 ## Task Describtion
 
-The task was to create a web application from scratch. The webpage is a portfolio which we can add to as the course progresses.
+As a potential employer I want to get an impression of the developer to see project examples and contact information.
 
-The portfolio is ment to demonstarte our skills and talents of HTML and CSS to employers that might want to hire someone, with a focus on flexbox, media queries and CSS variables. The portfolio demonstrates the highlights of our work and the process behind it to maximize the chances to find a job. The portfolio is ment to align with certain criteria, mentioned below.
+The portfolio is supposed to showcase the web developers skills and work that a potential employer or any other user can get an impression of the developers knowledge and qualifications. 
 
-**Note:** As I have only created one webpage so far, this is the only one that is linked and the other containers are filled with placeholder images.
 
 ## Actual Behaviour
 
-```
-* You are presented with my name, a recent photo, and links to sections about me, my work, and how to contact me.
+* WHEN the page loads, the user can see the hero image, a header with a navigation bar and the about-me section.
 
-* When you click on the links in the navigation bar, the UI scrolls to the corresponding section.
+* WHEN I scrole down, the user can see examples of my work with the featured first project and a contact form to send an email to request a project.
 
-* The my-work section includes images of my applications (atm placeholder images) which are titled.
+* WHEN I see the footer, it includes possible contact information/ different links to social media platforms of the developer.
 
-* The first image of the application is larger than the other ones and they all have hover functions.
+* When I click on the featured image of the first Project (CocktailHub), a new tab will open which takes you straight to the deployed webpage. 
 
-* When you click on the first/larger image it will take you to the first projects deployed webpage.
+* If the user clicks on the green button, a new tab will take the user to the GitHub repository.
 
-* The layout is responsive and adapts to different viewports, such as smartphones and Ipads.
-```
+* When I go to the slideshow and click on the arrows on the left or right, the user can slide through 5 project examples with a describtion. If the user clicks on the image, he/she will be taken to the deployed webpage and if clicked on the green button it will take you to the GitHub repository.
 
-## 🏆 Bonus
-```
+* WHEN the user goes to the last section of the page, he/she will be presented with a contact form to enter the name, email address and message to send an email to the developer. 
 
-* When you click on the Resume PDF element in the navigation bar, you will download my resume.
+* WHEN the user goes to the footer of the page, he/she is able to go to different social media platforms of the web developer when clicked on the names of the SM platform.
 
-* When you click on the GitHub or LinkedIn element in the footer, it will lead you too my profile on both social media websites.
-```
+
 
 ## Mock-Up
 
 The following GIF shows the web applications apperance and functionality:
 
-![portfolio-demo](./Assets/images/portfolio.gif)
+![portfolio-demo](./Assets/images/webpage.gif)
 
 ## Credits
 
-https://www.w3schools.com/html/
-https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties
-https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
-https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals
-https://css-tricks.com/snippets/css/style-links-depending-on-destination/
-https://htmlcheatsheet.com/css/
-https://www.w3schools.com/tags/att_a_download.asp
+* https://www.w3schools.com/html/
+* https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-properties
+* https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+* https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals
+* https://css-tricks.com/snippets/css/style-links-depending-on-destination/
+* https://htmlcheatsheet.com/css/
+* https://www.w3schools.com/tags/att_a_download.asp
