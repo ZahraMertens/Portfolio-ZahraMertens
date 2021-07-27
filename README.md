@@ -9,9 +9,10 @@ The deployed Webpage is my Portfolio to showcase my work, introduce myself and g
 ## Table if Contents
 1. [General Information](#general-informaion)
 2. [Task Description](#task-description)
-3. [Changes that have been made](#changes-that-have-been-made)
-4. [Mock-Up](#mock-up)
-5. [Credits](#credits)
+3. [Actual Behaviour](#actual-behaviour)
+4. [Technology used](#technology-used)
+5. [Mock-Up](#mock-up)
+6. [Credits](#credits)
 
 
 ## Task Describtion
@@ -37,8 +38,19 @@ The portfolio is supposed to showcase the web developers skills and work that a 
 
 * WHEN the user goes to the last section of the page, he/she will be presented with a contact form to enter the name, email address and message to send an email to the developer. 
 
+* WHEN the user clicks the 'send mail'-button, the page will go to a "thank you for submitting" page and you can click on go back to go back to your page.
+
 * WHEN the user goes to the footer of the page, he/she is able to go to different social media platforms of the web developer when clicked on the names of the SM platform.
 
+## Technology used
+
+* HTML
+* JavaScript
+* CSS
+* Google Fonts
+* Getform.io
+
+**Note** In the future I'd like to exchange getform with php get method
 
 
 ## Mock-Up
@@ -56,3 +68,5 @@ The following GIF shows the web applications apperance and functionality:
 * https://css-tricks.com/snippets/css/style-links-depending-on-destination/
 * https://htmlcheatsheet.com/css/
 * https://www.w3schools.com/tags/att_a_download.asp
+
+© 2021 Coding Bootcamp ,University of Sydney and Trilogy Education
