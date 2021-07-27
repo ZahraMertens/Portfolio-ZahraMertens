@@ -1,11 +1,10 @@
 ## General Information
 
-```
+
 The deployed Webpage is my Portfolio to introduce myself, demonstrate my work and present the opportunity to possible employers to contact.
 
 * [Deployed URL of the Weather Dashboard](https://zahramertens.github.io/Portfolio-ZahraMertens/)
 * [URL of the GitHub Repo](https://github.com/ZahraMertens/Portfolio-ZahraMertens.git)
-```
 
 ## Table if Contents
 1. [General Information](#general-informaion)
