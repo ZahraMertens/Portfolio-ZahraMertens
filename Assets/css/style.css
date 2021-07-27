@@ -1,6 +1,12 @@
+:root {
+    --hover-color: #ff387a;
+    --btn-green: green;
+    --header-grey: grey;
+    --background-grey: rgb(245, 245, 245);
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    
 }
 
 p {
@@ -12,6 +18,23 @@ main {
     flex-wrap: wrap;
 }
 
+/*------------section header styles-----------------*/
+.section-header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+.subheader-section {
+    color: grey;
+    font-size: 30px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/*------------header styles-----------------*/
 header {
     background-color: black;
     color: white;
@@ -52,11 +75,11 @@ header {
     color: rgb(209, 209, 209);
 }
 
+/*------------hero-image styles-----------------*/
 .hero {
     padding-right: 0px!important;
     width: 100%
 }
-
 
 .img-hero {
     width: 100%;
@@ -64,14 +87,8 @@ header {
     margin-bottom: 30px;
 }
 
-.section-header {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 40px;
-    font-weight: 900;
-    padding-top: 20px;
-}
 
+/*------------about-me section-----------------*/
 .about-me {
     padding-bottom: 50px;
     width: 100%
@@ -84,10 +101,14 @@ header {
     width: 50%;
 }
 
-#name {
-    color: grey;
-    font-size: 25px;
-    padding-bottom: 20px;
+/*------------my-work section section-----------------*/
+.main-work-container {
+    width: 100%;
+    display: block;
+    margin-bottom: 50px;
+    background-color: rgb(245, 245, 245);
+    padding-bottom: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
 }
 
 .my-work {
@@ -95,23 +116,32 @@ header {
     margin-top: 20px;
 }
 
-.img-main,
-.img-slideshow {
-    border: 1px solid black;
-    border-radius: 15px;
+.p-main {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
 }
 
-.img-slideshow {
-    width: 400px;
-    height: 400px;
-    padding: 0px;
+.repo-main-a {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.repo-main-btn {
+    font-size: 16px;
+    padding: 10px 14px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(11, 129, 0);
+    border: 1px solid rgb(0, 0, 0);
+    margin-top: 20px;
     transition: 0.3s;
-    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
-.img-slideshow:hover {
-    border: 5px solid #ff387a;
-    cursor: pointer;
+.repo-main-btn:hover {
+    background-color: #ff387a;
 }
 
 .img-main {
@@ -128,56 +158,15 @@ header {
     border: 5px solid green;
 }
 
-.header-main {
-    text-align: center;
-    font-size: 30px;
-    color: grey;
+.img-main,
+.img-slideshow {
+    border: 1px solid black;
+    border-radius: 15px;
 }
 
-.p-main {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-}
 
-.main-image-container {
-    width: 100%;
-    display: block;
-    margin-bottom: 50px;
-    background-color: rgb(245, 245, 245);
-    padding-bottom: 50px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
 
-.project-a {
-    display: block;
-    padding-bottom: 20px;
-}
-
-.repo-Project {
-    font-size: 16px;
-    padding: 10px 14px;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    background-color: rgb(11, 129, 0);
-    border: 1px solid rgb(0, 0, 0);
-    margin-top: 20px;
-    transition: 0.3s;
-}
-
-.repo-Project:hover {
-    background-color: #ff387a;
-}
-
-.sub-header {
-    text-align: center;
-    font-size: 30px;
-    color: grey;
-    margin-bottom: 20px;
-}
-
+/*------------my-work section section-----------------*/
 .slide {
     width: 100%;
     display: block;
@@ -193,13 +182,53 @@ header {
     padding: 0px!important; 
     width: 40%;
 }
-  
+
 /* Make the images invisible by default */
-.Containers {
+.slideshow-card {
     display: none;
     width: 400px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.img-slideshow {
+    width: 400px;
+    height: 400px;
+    padding: 0px;
+    transition: 0.3s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.img-slideshow:hover {
+    border: 5px solid #ff387a;
+    cursor: pointer;
+}
+
+.card-text-container {
+    text-align: center;
+}
+
+.card-header {
+    color: rgb(0, 0, 0);
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.card-btn {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(11, 129, 0);
+    border: 1px solid rgb(0, 0, 0);
+    transition: 0.3s;
+}  
+
+.card-btn:hover {
+    background-color: #ff387a;
 }
   
 /* forward & Back buttons */
@@ -217,7 +246,7 @@ header {
     transition: 0.4s ease;
     user-select: none;
 }
-  
+
 /* Place the "forward button" to the right */
 .forward {
     right: 0;
@@ -232,33 +261,6 @@ header {
 .Back:hover, 
 .forward:hover {
     background-color: rgba(231, 231, 231, 0.8);
-}
-
-.repo-btn {
-    font-size: 16px;
-    margin-top: 10px;
-    padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    color: white;
-    background-color: rgb(11, 129, 0);
-    border: 1px solid rgb(0, 0, 0);
-    transition: 0.3s;
-}
-
-.project-header {
-    color: rgb(0, 0, 0);
-    padding-top: 20px;
-    text-align: center;
-    font-size: 20px;
-}
-
-.project {
-    text-align: center;
-}
-
-.repo-btn:hover {
-    background-color: #ff387a;
 }
 
 /* The circles or bullets and indicators */
@@ -278,6 +280,8 @@ header {
     background-color: #ff387a;
 }
   
+
+/*------------project-request section section-----------------*/
 .contact {
     width: 100%;
     display: block;
@@ -287,7 +291,6 @@ header {
     background-color: rgb(230, 230, 230);
     box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px 0px, rgba(0, 0, 0, 0.32) 0px 2px 16px 0px;
 }
-
 
 .form-email{
     width: 500px;
@@ -299,27 +302,23 @@ label {
     display: block!important;
 }
 
-input {
+.input { 
     padding: 0px!important; 
-}
-
-.input {
     box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px #FFF, 0 1px 0 #FFF;
     border-radius: 3px;
     border: 1px solid grey;
     width: 500px;
     height: 35px;
-   
-}
-
-.input:focus,
-#message:focus {
-    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 
 #message {
     border-radius: 3px;
     width: 500px;
+}
+
+.input:focus,
+#message:focus {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 
 .submit-btn {
@@ -341,6 +340,8 @@ input {
     background-color: #ff387a;
 }
 
+
+/*------------footer section-----------------*/
 footer {
     padding-top: 20px;
     text-align: center;
@@ -359,6 +360,14 @@ footer {
     font-weight: bolder;
 }
 
+.footer-content {
+    display: block;
+}
+
+.footer-content a {
+  padding-right: 10px;
+}
+
 .footer-links {
     color: white;
     font-size: 22px;
@@ -373,18 +382,25 @@ footer {
     color: white;
 }
 
-.footer-content {
-    display: block;
-}
-
-.footer-content a {
-  padding-right: 10px;
-}
-
 .icon {
     margin-left: 20px;
 }
 
+.footer-mail {
+    display: block;
+    color: white;
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 19px;
+}
+
+.footer-mail:hover {
+    color: #ff387a;
+    font-weight: bold;
+}
+
+
+/*------------responsive layout-----------------*/
 @media screen and (max-width: 1245px){
     .slideshow-container {
         width: 70%;
@@ -395,19 +411,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 670px){
-    .slideshow-container {
-        width: 100%;
-    }
-
-    .about-section {
-        width: 90%;
-    }
-
-    .p-main {
-        width: 90%;
-    }
-}
 
 @media screen and (max-width: 750px){
     .li-nav {
@@ -444,6 +447,21 @@ footer {
     }
 }
 
+@media screen and (max-width: 670px){
+    .slideshow-container {
+        width: 100%;
+    }
+
+    .about-section {
+        width: 90%;
+    }
+
+    .p-main {
+        width: 90%;
+    }
+
+}
+
 @media screen and (max-width: 535px){
     .img-main {
         width: 250px;
@@ -462,13 +480,13 @@ footer {
         margin-right: auto;
     }
 
-    .Containers {
+    .slideshow-card {
         width: 300px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .form-email{
+    .form-email {
         width: 90%;
     }
 

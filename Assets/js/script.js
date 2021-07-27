@@ -13,7 +13,7 @@ function currentSlide(n) {
 
 function SlideShow(n) {
   var i;
-  var slides = document.getElementsByClassName("Containers");
+  var slides = document.getElementsByClassName("slideshow-card");
   var circles = document.getElementsByClassName("dots");
   if (n > slides.length) {slidePosition = 1}
   if (n < 1) {slidePosition = slides.length}
