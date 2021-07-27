@@ -1,7 +1,10 @@
 body {
-    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    line-height: 1.5;
+    
+}
+
+p {
+   font-family: 'DM Sans', sans-serif; 
 }
 
 main {
@@ -38,7 +41,7 @@ header {
 
 .nav-el {
     color: white;
-    font-size: 17px;
+    font-size: 22px;
     transition: 0.3s;
     text-decoration: none;
 }
@@ -107,7 +110,7 @@ header {
 }
 
 .img-slideshow:hover {
-    border: 5px solid rgb(0, 0, 0);
+    border: 5px solid #ff387a;
     cursor: pointer;
 }
 
@@ -212,19 +215,23 @@ header {
     font-weight: bold;
     font-size: 19px;
     transition: 0.4s ease;
-    border-radius: 0 5px 5px 0;
     user-select: none;
 }
   
 /* Place the "forward button" to the right */
 .forward {
     right: 0;
-    border-radius: 4px 0 0 4px;
+    border-radius: 10px;
+}
+
+.Back {
+    border-radius: 10px;
 }
   
 /*when the user hovers,add a black background with some little opacity */
-.Back:hover, .forward:hover {
-    background-color: rgba(117, 117, 117, 0.8);
+.Back:hover, 
+.forward:hover {
+    background-color: rgba(231, 231, 231, 0.8);
 }
 
 .repo-btn {
@@ -250,13 +257,8 @@ header {
     text-align: center;
 }
 
-.repo:hover {
+.repo-btn:hover {
     background-color: #ff387a;
-}
-
-.img-slideshow:hover + .Info {
-    border-left: 3px solid rgb(0, 0, 0);
-    border: 2px solid rgb(0, 0, 0);
 }
 
 /* The circles or bullets and indicators */
@@ -359,7 +361,7 @@ footer {
 
 .footer-links {
     color: white;
-    font-size: 17px;
+    font-size: 22px;
     transition: 0.3s;
     text-decoration: none;
     padding-right: 40px;
@@ -367,7 +369,7 @@ footer {
 
 .footer-links:hover {
     font-weight: bolder;
-    font-size: 18px;
+    font-size: 23px;
     color: white;
 }
 
@@ -386,6 +388,10 @@ footer {
 @media screen and (max-width: 1245px){
     .slideshow-container {
         width: 70%;
+    }
+
+    .nav-el {
+        font-size: 17px;
     }
 }
 
@@ -413,13 +419,28 @@ footer {
         display: block;
     }
 
+    .header-h1 {
+        width: 100%;
+    }
+
     .nav {
         display: block;
         text-align: left;
+        padding-top: 20px;
+    }
+
+    .nav-el {
+        font-size: 20px;
+    }
+
+    .nav-el:before {
+        content: "• "; 
+        color: rgb(255, 255, 255)
     }
 
     .li-nav {
         padding-left: 0px;
+        
     }
 }
 
@@ -462,4 +483,11 @@ footer {
         margin-left: 5px;
     }
 
+    .footer-links {
+        font-size: 17px;
+    }
+    
+    .footer-links:hover {
+        font-size: 19px;
+    }
 }
